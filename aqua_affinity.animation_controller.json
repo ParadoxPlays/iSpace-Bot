@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.origin.traits.aqua_affinity": {
+      "states": {
+        "on_detect": { 
+          "transitions": [ { "on_wet": "q.is_in_water" } ],
+          "on_entry": [ "@s origins:trait_remove_conduit_effects_on_landfall" ]
+        },
+        "on_wet": {
+          "transitions": [
+            { "on_wet_tick": "q.is_in_water" },
+            { "on_detect": "!q.is_in_water" } 
+          ],
+          "on_entry": [ "/execute at @s if block ~~1.6~ water -1 run effect @s conduit_power 12 2 true" ]
+        },
+        "on_wet_tick": { 
+          "transitions": [ { "on_wet": "1" } ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.origin.traits": {
+      "initial_state": "check",
+      "states": {
+        "check": {
+          "transitions": [
+            { "human": "q.scoreboard('trait') == 1" },
+            { "avian": "q.scoreboard('trait') == 2" },
+            { "arachnid": "q.scoreboard('trait') == 3" },
+            { "elytrian": "q.scoreboard('trait') == 4" },
+            { "shulk": "q.scoreboard('trait') == 5" },
+            { "feline": "q.scoreboard('trait') == 6" },
+            { "enderian": "q.scoreboard('trait') == 7" },
+            { "merling": "q.scoreboard('trait') == 8" },
+            { "blazeborn": "q.scoreboard('trait') == 9" },
+            { "phantom": "q.scoreboard('trait') == 10" },
+            { "kitsune": "q.scoreboard('trait') == 11" },
+            { "slimecican": "q.scoreboard('trait') == 12" },
+            { "starborne": "q.scoreboard('trait') == 13" },
+            { "inchling": "q.scoreboard('trait') == 14" },
+            { "bee": "q.scoreboard('trait') == 15" },
+            { "piglin": "q.scoreboard('trait') == 16" }
+          ]
+        },
+
+        "human": {
+          "animations": [ 
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 1" } ]
+        },
+
+        "avian": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "tailwind",
+            "slow_falling",
+            "fresh_air",
+            "vegetarian"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 2" } ]
+        },
+
+        "arachnid": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "webbing",
+            "master_of_webs",
+            "climbing",
+            "carnivore"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 3" } ]
+        },
+
+        "elytrian": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "launch_into_air",
+            "elytra",
+            "aerial_combatant",
+            "claustrophobia",
+            "light_armor"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 4" } ]
+        },
+
+        "shulk": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "shulk_inventory",
+            "strong_arms",
+            "no_shield"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 5" } ]
+        },
+
+        "feline": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "sprint_jump",
+            "cat_vision",
+            "weak_arms"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 6" } ]
+        },
+
+        "enderian": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "throw_ender_pearl",
+            "pumpkin_hate"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 7" } ]
+        },
+
+        "merling": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "aqua_affinity"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 8" } ]
+        },
+
+        "blazeborn": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "nether_spawn",
+            "burning_wrath"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 9" } ]
+        },
+
+        "phantom": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "phantomized",
+            "phantomized_control"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 10" } ]
+        },
+
+        "kitsune": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "pounce",
+            "tailwind",
+            "berry_craver_control"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 11" } ]
+        },
+
+        "slimecican": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+            
+            "fragmentation",
+            "high_jump"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 12" } ]
+        },
+
+        "starborne": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "starborne_cooldown",
+            "stress",
+            "stress_control",
+            "hyper_leap",
+            "hyper_leap_control",
+            "cosmic_gift",
+            "shooting_star",
+            "shooting_star_control"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 13" } ]
+        },
+
+        "inchling": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 14" } ]
+        },
+
+        "bee": {
+          "animations": [
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "sacrifice_stinger",
+            "bloom",
+            "nighttime"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 15" } ]
+        },
+
+        "piglin": {
+          "animations": [ 
+            "berry_craver_control",
+            "slimecicle_slime_ball_control",
+            "hyper_active_control",
+
+            "nether_spawn",
+            "piglin_cooldown",
+            "gold_armor_only",
+            "gain_defense_per_kill"
+          ],
+          "transitions": [ { "check": "q.scoreboard('trait') != 16" } ]
+        }
+      }
+    }
+  }
+}
